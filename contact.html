@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coffee.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -25,7 +26,6 @@
             width: 50%;
             padding: 10px;
             height: 400px;
-            /* Should be removed. Only for demonstration */
         }
         /* Clear floats after the columns */
         
@@ -45,6 +45,7 @@
         /* Style inputs */
         input[type=text],
         input[type=tel],
+        input[type=email],
         select,
         textarea {
             width: 100%;
@@ -56,21 +57,21 @@
         }
         
         input[type=submit] {
-            background-color: #4CAF50;
             color: white;
-            padding: 12px 20px;
+            background-color: #413F42;
             border: none;
             cursor: pointer;
         }
         
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #413F42;
         }
         /* Style the container/contact section */
         
         .container {
             border-radius: 5px;
             padding: 10px;
+            margin-bottom: -100px;
         }
         /* Create two columns that float next to eachother */
         
@@ -87,34 +88,50 @@
             display: table;
             clear: both;
         }
-        #page-container {
-        position: relative;
-        min-height: 100vh;
+      
+        form {
+           
+            background-color: #413F42;
+            border-bottom: 3px solid black;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;  
         }
 
-    #content-wrap {
-        padding-bottom: 2.5rem;    /* Footer height */
+        footer{
+            background-color: #413F42;
+            border-bottom: 3px solid black;
+            color: white;
+             box-shadow: 5px 10px #888888;  
         }
-    #footer {
-        background-color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 0.01rem;            /* Footer height */
-            }
-       
-    textarea {
+
+
+        textarea {
             border: none;
             border-radius: 25px;
             border-bottom: 2px solid black;
         }
-        
-       
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+            input[type=text] {
+                border: none;
+                border-radius: 25px;
+                border-bottom: 2px solid black;
+            }
+        }
+/* Coffee CSS*/
+
     </style>
 </head>
 
 <body>
-    <div id="page-container">
     <header>
         <a href="#" class="logo">SK</a>
         <div class=" modal fade">
@@ -139,38 +156,62 @@
 
 
     </header>
-    <div id="page-container">
-    <div style="margin-top: 150px; text-align:center;border-style: solid; border-color: white;margin-left: 100px;margin-right: 100px;">
+ 
+<div style="margin-top: 150px; text-align:center;border-style: solid; border-color: white;margin-left: 100px;margin-right: 100px;">
         <h2 style="font-size:30px;color:white">“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</h2>
         <h2 style="font-size:30px;color:white;margin-right:10px">“-Walt Disney.”</h2>
-    </div>
-    <div id="box">
-        <form>
-            <!-- <span class="text-center">login</span> -->
-            <div class="input-container">
-                <input type="text" required="" />
-                <label>Full Name</label>
-            </div>
-            <div class="input-container">
-                <input type="mail" required="" />
-                <label>Email</label>
-            </div>
-            <div class="input-container">
-                <input type="tel" required="" />
-                <label>Phone Number</label>
-            </div>
+    </div> 
+    <div class="container">
 
-            <a href="#" class="button" style="margin-left:80px;margin-top:20px;">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <p class="button_color" style="color: #03e9f4;">Submit</p>
-            </a>
-        </form>
-    </div>
+        <div class="row_image">
+            <div class="col" style="margin-top: 30px;">
+                <div class="container_coffee">
+                    <div class="coffee-header">
+                      <div class="coffee-header__buttons coffee-header__button-one"></div>
+                      <div class="coffee-header__buttons coffee-header__button-two"></div>
+                      <div class="coffee-header__display"></div>
+                      <div class="coffee-header__details"></div>
+                    </div>
+                    <div class="coffee-medium">
+                      <div class="coffe-medium__exit"></div>
+                      <div class="coffee-medium__arm"></div>
+                      <div class="coffee-medium__liquid"></div>
+                      <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                      <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                      <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                      <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                      <div class="coffee-medium__cup"></div>
+                    </div>
+                    <div class="coffee-footer"></div>
+                  </div>
+            </div>
+            <div class="col">
+                <form action="/action_page.php" >
+                    <label for="lname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <div id="row" style="margin-top: 30%;">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="mobile">Phone Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="+91-9834242046"> 
+
+                    <label for="email">Email-Id</label>
+                    <input type="email" id="email" name="email" placeholder="shubham1998k@gmail.com"> 
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <a href="#" class="button" style="margin-left:30px;margin-top: 10px;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="button_color" style="color: #03e9f4; ">Submit</p>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div> 
+    <div id="row">
         <div id="column" style="background-color:black;border-style: solid;border-color: black">
             <center>
                 <h2 style="font-size: 100px;"> <a href="#"><i class="fa fa-android" aria-hidden="true" style="color:white"></i></a></h2>
@@ -230,16 +271,34 @@
             </center>
         </div>
     </div>
-
-    </div>
-    <footer id="footer" style="background-color: white;height:100px">
-       
-    </footer>
 </div>
 
+<footer style="background-color: #070707; height: 200px;">
+    <div class="Social" style="margin-left:40%;">
+        <ul class="ul">
+            <li class="li">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li class="li">
+                <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li class="li">
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
+            <li class="li">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
     <script type="text/javascript">
-          function twitterHref() {
-            location.href = 'https://twitter.com/shubhamkariya8';
+
+        function twitterHref() {
+            location.href = 'https://wa.me/919834242046';
         }
         function whatsappHref() {
             location.href = 'https://wa.me/919834242046';
@@ -250,6 +309,7 @@
         function fbHref() {
             location.href = 'https://www.facebook.com/shubham1998k/';
         }
+
         var TxtRotate = function(el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -330,12 +390,12 @@
         window.addEventListener("scroll", function() {
             console.log(window.scrollY, "sticky");
 
-            if (window.scrollY > 0) {
+            if (window.scrollY > 10) {
                 console.log("inside loop");
                 var element = document.querySelector("header");
-                console.log((window.scrollY > 20));
+                console.log((window.scrollY > 30));
                 document.getElementById("bar").style.color = "grey";
-                element.classList.toggle("sticky", (window.scrollY > 20));
+                element.classList.toggle("sticky", (window.scrollY > 10));
             }
         });
     </script>

@@ -33,10 +33,25 @@
             display: table;
             clear: both;
         }
+        #page-container {
+        position: relative;
+        min-height: 100vh;
+        }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+        }
+    #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 0.01rem;            /* Footer height */
+            }
     </style>
 </head>
 
 <body>
+    <div id="page-container">
     <header>
         <a href="#" class="logo">SK</a>
         <div class=" modal fade">
@@ -144,27 +159,31 @@
         </div>
 
     </div>
-    <div class="Social" style="margin-left:40%;margin-top: 0%;">
-        <ul class="ul">
-            <li class="li" onclick="twitterHref()">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            </li>
-            <li class="li" onclick="whatsappHref()">
-                <a href="#" ><i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-            </li>
-            <li class="li" onclick="youtubeHref()">
-                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            </li>
-            <li class="li" onclick="fbHref()">
-                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            </li>
-        </ul>
+    <footer id="footer" >
+        <a ><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <div style="background-color: azure;">
+        <div class="Social" style="margin-left:40%;margin-top:20%;">
+            <ul class="ul">
+                <li class="li" onclick="twitterHref()">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                </li>
+                <li class="li" onclick="whatsappHref()">
+                    <a href="#" ><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                </li>
+                <li class="li" onclick="youtubeHref()">
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </li>
+                <li class="li" onclick="fbHref()">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    
+    </footer>
     </div>
-
-
-
 
     <script type="text/javascript">
         

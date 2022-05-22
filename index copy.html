@@ -13,14 +13,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 <style>
-    * {
-        box-sizing: border-box;
-    }
-    /* Create two equal columns that floats next to each other */
     
+     
     #row {
         margin-left: 50px;
         margin-right: 50px;
@@ -40,17 +36,32 @@
         display: table;
         clear: both;
     }
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+        }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+        }
+    #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 0.01rem;            /* Footer height */
+            }
 </style>
 
 <body>
+    <div id="page-container">
     <header>
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo">SK</a>
         <div class=" modal fade">
             <ul id="ul">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="aboutus.html">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="aboutus.html">Portfolio</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="container">
@@ -59,175 +70,171 @@
              </button>
             <div class="content">
                 <ul id="cul">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="aboutus.html">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
 
 
     </header>
-    <div style="margin-top:150px;
-                text-align: center;
-                border-style: solid;
-                border-color: white;
-                margin-left:  100px;
-                margin-right: 100px;">
-
-        <h2 style="font-size:50px;color:white">“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</h2>
-        <h2 style="font-size:50px;color:white;margin-right: -700px;">– Walt Disney</h2>
-    </div>
-    <div class="row" style="margin-top: 40px; margin-right: 20px;">
+    <section class="banner"> </section>
+    <div class="row">
         <div class="column box">
             <div class="imgBx">
-                <img src="assets/img.jpg">
+                <img src="img.jpg">
             </div>
             <div class="content">
                 <h2>Shubham Kariya<br><span>Creative Design</span></h2>
             </div>
         </div>
         <div class="column">
-            <!-- <h1>ABOUT US</h1> -->
+            <h1>ABOUT US</h1>
             <h2>Hello All I'm Shubham Kariya <br>I'm here to show some of skills of
                 <span style="color:blue" class="txt-rotate" data-period="2000" data-rotate='[ "Website designer.", "Graphics Designer.", "Android developer.", "Flutter developer..", "fun!" ]'></span><br> I have done many project.
             </h2>
-            <!-- <a href="#" class="button">
+            <a href="#" class="button" style="margin-top:30px">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <p class="button_color" style="color: #03e9f4;">View More</p>
-            </a> -->
-        </div>
-
-    </div>
-    <div id="row">
-        <div id="column" style="background-color:rgb(248, 232, 232);">
-            <center>
-                <h2>Column 1</h2>
-                <p>Some text..</p>
-            </center>
-        </div>
-        <div id="column" style="background-color:#bbb;">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
+            </a>
         </div>
     </div>
+    <!-- <div id="row"> -->
 
-    <div class="Social" style="margin-left:30%;">
+<footer id="footer" >
+    <a ><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    <div style="background-color: azure;">
+    <div class="Social" style="margin-left:40%;margin-top:20%;">
         <ul class="ul">
-            <li class="li">
+            <li class="li" onclick="twitterHref()">
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
             </li>
-            <li class="li">
-                <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <li class="li" onclick="whatsappHref()">
+                <a href="#" ><i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
             </li>
-            <li class="li">
+            <li class="li" onclick="youtubeHref()">
                 <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </li>
-            <li class="li">
+            <li class="li" onclick="fbHref()">
                 <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
             </li>
         </ul>
     </div>
+  </div>
 
+</footer>
 
+</div>
+</body>
+<script type="text/javascript">
 
-    <script type="text/javascript">
-        var TxtRotate = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
+    function twitterHref() {
+        location.href = 'https://wa.me/919834242046';
+    }
+    function whatsappHref() {
+        location.href = 'https://wa.me/919834242046';
+    }
+    function youtubeHref() {
+        location.href = 'https://www.youtube.com/channel/UCVEO8zcEjVJF_tH9OycMEzg';
+    }
+    function fbHref() {
+        location.href = 'https://www.facebook.com/shubham1998k/';
+    }
 
-        TxtRotate.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
+    TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 300 - Math.random() * 100;
-
-            if (this.isDeleting) {
-                delta /= 2;
-            }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function() {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-            document.body.appendChild(css);
-        };
-
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-    </script>
 
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            console.log(window.scrollY, "sticky");
+        var that = this;
+        var delta = 300 - Math.random() * 100;
 
-            if (window.scrollY > 0) {
-                console.log("inside loop");
-                var element = document.querySelector("header");
-                console.log((window.scrollY > 20));
-                document.getElementById("bar").style.color = "grey";
-                element.classList.toggle("sticky", (window.scrollY > 20));
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
             }
         });
-    </script>
-</body>
+    }
+</script>
 
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        console.log(window.scrollY, "sticky");
+
+        if (window.scrollY > 0) {
+            console.log("inside loop");
+            var element = document.querySelector("header");
+            console.log((window.scrollY > 10));
+            document.getElementById("bar").style.color = "grey";
+            element.classList.toggle("sticky", (window.scrollY > 20));
+        }
+    });
+</script>
 
 </html>

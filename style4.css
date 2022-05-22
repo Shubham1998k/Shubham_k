@@ -1,0 +1,177 @@
+#row {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+}
+/* Clear floats after the columns */
+
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text],
+input[type=tel],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #413F42;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #413F42;
+}
+/* Style the container/contact section */
+
+.container {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: -100px;
+}
+/* Create two columns that float next to eachother */
+
+.col {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+/* Clear floats after the columns */
+
+.row_image:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form {
+   
+    background-color: #413F42;
+    border-bottom: 3px solid black;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;  
+}
+
+footer{
+    background-color: #413F42;
+    border-bottom: 3px solid black;
+    color: white;
+     box-shadow: 5px 10px #888888;  
+}
+
+
+textarea {
+    border: none;
+    border-radius: 25px;
+    border-bottom: 2px solid black;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=text] {
+        border: none;
+        border-radius: 25px;
+        border-bottom: 2px solid black;
+    }
+}
+/* Coffee CSS*/
+#row {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+#column {
+float: left;
+width: 50%;
+padding: 10px;
+height: 400px;
+/* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+
+#row:after {
+content: "";
+display: table;
+clear: both;
+}
+#page-container {
+position: relative;
+min-height: 100vh;
+}
+
+#content-wrap {
+padding-bottom: 2.5rem;    /* Footer height */
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.1rem;            /* Footer height */
+    }
+.details{
+    margin-top: 10%;
+    background-color:black;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 20%; 
+    margin: 30px;
+}
+
+ @media screen and (max-width: 792px) {
+
+    #column {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 400px;
+    }
+    .details{           
+            margin-bottom: 50%; 
+            margin-top: 10%;
+            background-color:black;
+            border:none;
+        
+            margin: 30px;
+
+    }
+    #footer{
+        color: white;
+        margin-top: 10%;
+    }
+    
+    
+    }
