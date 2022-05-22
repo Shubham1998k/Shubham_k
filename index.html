@@ -4,69 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SK-Website</title>
+    <link rel="icon" type="image/x-icon" href="download.jpeg">
     <link rel="stylesheet" href="style3.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style2.css"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="style4.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="message.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @media screen and (max-width: 792px) {
+        .row .details_data
+         {
+            width: 100%; 
+            background-color:black;border-style: solid;border-color: black
+        }
+    }
+    
+    </style>
 </head>
-<style>
-    #row {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    #column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 400px;
-        /* Should be removed. Only for demonstration */
-    }
-    /* Clear floats after the columns */
-    
-    #row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-</style>
 
 <body>
-    <header>
+    <div id="page-container" >
+    <header >
         <a href="#" class="logo">SK</a>
-        <div class=" modal fade">
+        <div class="modal fade">
             <ul id="ul">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="aboutus.html">Portfolio</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
+                <!-- <li class="active"><a href="#">Home</a></li>
+                <li><a href="aboutus.html">Portfolio</a></li> -->
+                <li><a id="s1" href="#1">Home</a></li>
+                <li><a id="s2" href="#2">Portfolio</a></li>
+                <li><a id="s3" href="#3">Contact</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
             </ul>
         </div>
-        <div class="container">
+        <div class="container" id="1">
             <button type="button" class="collapsible">  
                   <i class="fa fa-bars" id="bar" style="font-size:30px;"></i>
              </button>
             <div class="content">
                 <ul id="cul">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="aboutus.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li ><a id="s1" href="#1">Home</a></li>
+                    <li><a id="s2" href="#2">Portfolio</a></li>
+                    <li><a id="s3" href="#3">Contact</a></li>
                 </ul>
             </div>
         </div>
 
 
     </header>
-    <section class="banner"> </section>
-    <div class="row">
-        <div class="column box">
-            <div class="imgBx">
-                <img src="assets/img.jpg">
+    <canvas>
+            
+    </canvas>
+    <div  style="margin-bottom: 5%;">
+    <div class="row" >
+        <div class="column box" >
+            <div class="imgBx" >
+                <img src="img.jpg" style="height: 330px;">
             </div>
             <div class="content">
                 <h2>Shubham Kariya<br><span>Creative Design</span></h2>
@@ -86,11 +84,385 @@
             </a>
         </div>
     </div>
+</div>
     <!-- <div id="row"> -->
-
-
-   
+        <!-- <div style="margin-top: 150px; text-align:center;border-style: solid; border-color: white;margin-left: 100px;margin-right: 100px;">
+            <h2 style="font-size:30px;color:white">“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</h2>
+            <h2 style="font-size:30px;colotr:white;margin-right:10px">“-Walt Disney.”</h2>
+        </div>  -->
+       <div id="2" class="details">
+        <div id="row" >
+            <div id="column" class="details_data" >
+                <center>
+                    <h2 style="font-size: 100px;"> <a href="#"><i class="fa fa-android" aria-hidden="true" style="color:white"></i></a></h2>
+                    <h2 style="color: white;">Android Developer</h2>
+                    <h2 style="color: white;">More than 3 Android Application</h2>
+                    <a href="#" class="button" style="margin-left: -30px;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="button_color" style="color: #03e9f4;">View More</p>
+                    </a>
+                </center>
+            </div>
+            <div id="column" class="details_data" >
+                <center>
+                    <h2 style="font-size: 100px;"> <a href="#"><i class="fa fa-desktop" aria-hidden="true"style="color:white"></i></a></h2>
+                    <h2 style="color: white;">Website Designer</h2>
+                    <h2 style="color: white;">More than 5 website </h2>
+                    <a href="#" class="button" style="margin-left: -30px;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="button_color" style="color: #03e9f4;">View More</p>
+                    </a>
+                </center>
+            </div>
+        </div>
+        <div id="row">
+            <div id="column"  class="details_data" >
+                <center>
+                    <h2 style="font-size: 100px;"> <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" style="color:white"></i></a></h2>
+                    <h2 style="color: white;">Graphic Designer</h2>
+                    <h2 style="color: white;">More than 5 website </h2>
+                    <a href="#" class="button" style="margin-left: -30px;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="button_color" style="color: #03e9f4;">View More</p>
+                    </a>
+                </center>
+            </div>
+            <div id="column"  class="details_data" >
+                <center>
+                    <h2 style="font-size: 100px;"> <a href="#"><i class="fa fa-mobile" aria-hidden="true"style="color:white"></i></a></h2>
+                    <h2 style="color: white;">Flutter Developer</h2>
+                    <h2 style="color: white;">Learning this and kind of making 2 Application </h2>
+                    <a href="#" class="button" style="margin-left: -30px;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="button_color" style="color: #03e9f4;">View More</p>
+                    </a>
+                </center>
+            </div>
+        </div>
+        </div>
+        <div id="3" class="container" style="margin-top: 10%;background-color:black;border-style: solid;border-color: white;margin-bottom: 60px; margin: 30px;">
+    
+            <div class="row_image">
+                <div class="col" style="margin-top: 30px;">
+                    <div class="container_coffee">
+                        <div class="coffee-header">
+                          <div class="coffee-header__buttons coffee-header__button-one"></div>
+                          <div class="coffee-header__buttons coffee-header__button-two"></div>
+                          <div class="coffee-header__display"></div>
+                          <div class="coffee-header__details"></div>
+                        </div>
+                        <div class="coffee-medium">
+                          <div class="coffe-medium__exit"></div>
+                          <div class="coffee-medium__arm"></div>
+                          <div class="coffee-medium__liquid"></div>
+                          <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                          <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                          <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                          <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                          <div class="coffee-medium__cup"></div>
+                        </div>
+                        <div class="coffee-footer"></div>
+                      </div>
+                </div>
+                <div class="col">
+                    <form action="/action_page.php" >
+                        <label for="lname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+                        <label for="mobile">Phone Number</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="+91-9834242046"> 
+    
+                        <label for="email">Email-Id</label>
+                        <input type="email" id="email" name="email" placeholder="shubham1998k@gmail.com"> 
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <a href="#" class="button" style="margin-left:30px;margin-top: 10px;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <p class="button_color" style="color: #03e9f4; ">Submit</p>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div> 
+<footer id="footer" style="background-color: white;margin-top: 100px;">
+    <div>
+    <div class="Social" style="margin-left:40%;">
+        <ul class="ul">
+            <li class="li" onclick="twitterHref()">
+                <a href="#" target="_blank" ><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li class="li" onclick="whatsappHref()">
+                <a href="#" target="_blank"  ><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li class="li" onclick="youtubeHref()">
+                <a href="#" target="_blank" ><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
+            <li class="li" onclick="fbHref()">
+                <a href="#" target="_blank" ><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+  </div>
+        <b style="color:white">@designer by SK developer</b>
+</footer>
+</div>
+</div>
 </body>
+<script type="text/javascript">
+
+    function twitterHref() {
+        location.target = "_blank";
+        location.href = 'https://twitter.com/shubhamkariya8';
+    }
+    function whatsappHref() {
+        location.href = 'https://wa.me/919834242046';
+    }
+    function youtubeHref() {
+        location.href = 'https://www.youtube.com/channel/UCVEO8zcEjVJF_tH9OycMEzg';
+    }
+    function fbHref() {
+        location.href = 'https://www.facebook.com/shubham1998k/';
+    }
+
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+<script type="text/javascript">
+// Initialising the canvas
+            var canvas = document.querySelector('canvas'),
+                ctx = canvas.getContext('2d');
+
+            // Setting the width and height of the canvas
+            canvas.width = window.innerWidth;
+            canvas.height = 400;
+
+            // Setting up the letters
+            var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+            letters = letters.split('');
+
+            // Setting up the columns
+            var fontSize = 10,
+                columns = canvas.width / fontSize;
+
+            // Setting up the drops
+            var drops = [];
+            for (var i = 0; i < columns; i++) {
+            drops[i] = 1;
+            }
+
+            // Setting up the draw function
+            function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            for (var i = 0; i < drops.length; i++) {
+                var text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillStyle = '#0f0';
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                drops[i]++;
+                if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+                drops[i] = 0;
+                }
+            }
+            }
+
+            // Loop the animation
+            setInterval(draw, 33);
+
+    window.addEventListener("scroll", function() {
+        console.log(window.scrollY, "sticky");
+
+        if (window.scrollY > 0) {
+            console.log("inside loop");
+            var element = document.querySelector("header");
+            console.log((window.scrollY > 20));
+            document.getElementById("bar").style.color = "grey";
+            element.classList.toggle("sticky", (window.scrollY > 20));
+        }
+    });
+</script>
+
+<script>
+    //Default active on home
+$('#s1').addClass("active");
+
+
+/*
+Smooth scrolling
+*/
+$("#s1").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#1").offset().top-5000
+     }, 2000);
+     $("#s2").removeClass("active");
+     $("#s1").addClass("active");
+     $("#s3").removeClass("active");
+  return false;
+ });
+
+$("#s2").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#2").offset().top-100
+     }, 1000);
+     $("#s2").addClass("active");
+     $("#s1").removeClass("active");
+     $("#s3").removeClass("active");
+  return false;
+ });
+
+$("#s3").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#3").offset().top-100
+     }, 1000);
+     $("#s2").removeClass("active");
+     $("#s1").removeClass("active");
+     $("#s3").addClass("active");
+  return false;
+ });
+
+
+
+$("#toTop").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#1").offset().top-65
+     }, 1000);
+  return false;
+ });
+$('#2').waypoint(function(event, direction) {
+
+  $("ul li").children().removeClass("active");
+  $("#s2").addClass("active");
+  
+  if (direction === 'down') {
+    offset = 90;
+  } 
+  else {
+    offset = 20;
+  }
+});
+
+
+/*
+Using jquery waypoints to change active on scroll
+*/
+$('#2').waypoint(function() {
+
+  $("ul li").children().removeClass("active");
+  $("#s2").addClass("active");
+  
+}, { offset: 101 });
+
+
+$('#3').waypoint(function() {
+  $("ul li").children().removeClass("active");
+  $("#s3").addClass("active");
+}, { offset: 101 });
+
+$('#1').waypoint(function() {
+  $("sul li").children().removeClass("active");
+  $("#s1").addClass("active");
+}, { offset: 0 });
+
+$('#2').waypoint(function() {
+  $(".to-top").addClass("visible");
+}, { offset: 100 });
+
+$('#1').waypoint(function(event, direction) {
+  $(".to-top").removeClass("visible");
+}, { offset: 30 });
+</script>
 
 
 </html>
