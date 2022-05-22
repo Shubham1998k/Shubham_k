@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    min-height: 200vh;
+}
+
+.sticky {
+    padding: 5px 100px;
+    height: 70px;
+    background: #fff;
+}
+
+#logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    margin-left: -100px;
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .nav_li {
+    position: relative;
+    list-style: none;
+}
+
+.nav .nav_li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 4vh;
+}
+
+nav .nav_li a:hover {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 700px;
+    transition: 0.6s;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+}
+
+.box:hover {
+    height: 300px
+}
+
+.box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .imgBx img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 1;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+}
+
+.box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box:hover .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.box .content h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.box .content h2 span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+h1,
+h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.active {
+    bottom: 2px;
+    text-decoration: underline solid red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    margin: 40px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    color: white;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text h1 {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.banner {
+    position: relative;
+    width: 98%;
+    height: 100vh;
+    background: url(download.jpg);
+    background-size: cover;
+}
+
+.sticky .logo,
+.sticky .nav .nav_li a {
+    color: #000;
+}
+
+.column h1 {
+    text-align: center;
+    color: honeydew;
+    margin-top: -20px;
+    text-decoration: underline;
+    text-decoration-style: 2px solid red;
+}
+
+.column h2 {
+    margin-left: 100px;
+    color: white;
+    font-size: 40px
+}
+
+@media screen and (max-width: 1300px) {
+    #logo {
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        margin-left: -100px;
+        margin-right: 100px;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+    .nav {
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .column h1 {
+        text-align: center;
+        color: honeydew;
+        margin-top: -20px;
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-style: 2px solid red;
+    }
+    .column h2 {
+        margin-left: 100px;
+        color: white;
+        font-size: 20px
+    }
+    #logo {
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        margin-left: -100px;
+        margin-right: 100px;
+        text-decoration: none;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+    .nav {
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+        margin: 30px;
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+        color: white;
+        /* Should be removed. Only for demonstration */
+    }
+    .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .column h1 {
+        text-align: center;
+        color: honeydew;
+        margin-right: 5%;
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-style: 2px solid red;
+    }
+    .column h2 {
+        margin-left: 10vh;
+        color: white;
+        font-size: 30px
+    }
+    .button {
+        position: relative;
+        display: inline-block;
+        padding: 25px 30px;
+        /* margin: 10px 0; */
+        font-size: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-bottom: 20%;
+        letter-spacing: 4px;
+        -webkit-box-reflect: below 1px linear-gradiant(transparent, #000500);
+    }
+    #logo {
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        margin-left: -100px;
+        margin-right: 100px;
+        text-decoration: none;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+    .navbar-header,
+    .navbar-toggle {
+        margin-right: -70px;
+    }
+    .nav {
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    #header {
+        background-color: white;
+    }
+    .column {
+        margin: 40px;
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+        color: white;
+        /* Should be removed. Only for demonstration */
+    }
+    .column h1 {
+        margin-left: -60px;
+        color: white;
+    }
+    .column h2 {
+        margin-left: 40px;
+        color: white;
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .column {
+        margin: 30px;
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+        color: white;
+        /* Should be removed. Only for demonstration */
+    }
+    .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .column h1 {
+        text-align: center;
+        color: honeydew;
+        margin-right: 5%;
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-style: 2px solid red;
+    }
+    .column h2 {
+        margin-left: 10vh;
+        color: white;
+        font-size: 30px
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        margin-left: 30%;
+        background: #060c21;
+        transition: 0.5s;
+    }
+    .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .column h1 {
+        text-align: center;
+        color: honeydew;
+        margin-right: 5%;
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-style: 2px solid red;
+    }
+    .column h2 {
+        margin-left: 15vh;
+        color: white;
+        font-size: 25px
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .column h1 {
+        text-align: center;
+        color: honeydew;
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-style: 2px solid red;
+    }
+    .column h2 {
+        margin-left: 6vh;
+        color: white;
+        font-size: 25px
+    }
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+    /* margin: 10px 0; */
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradiant(transparent, #000500);
+}
+
+.button:nth-child(1) {
+    filter: hue-rotate(290deg);
+}
+
+.button_color {
+    color: #03e9f4;
+}
+
+.button_color:hover {
+    color: black;
+}
+
+.button:hover {
+    color: #050801;
+    box-shadow: 0 0 50px #03e9f4, 0 0 250px #03e9f4, 0 0 500px #03e9f4, 0 0 1000px #03e9f4;
+}
+
+.button span {
+    position: absolute;
+    display: block;
+}
+
+.button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9fa);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9fa);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9fa);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9fa);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}

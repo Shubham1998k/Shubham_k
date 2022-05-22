@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #row {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    #column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 400px;
+        /* Should be removed. Only for demonstration */
+    }
+    /* Clear floats after the columns */
+    
+    #row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="#" class="logo">SK</a>
+        <div class=" modal fade">
+            <ul id="ul">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="aboutus.html">Portfolio</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <button type="button" class="collapsible">  
+                  <i class="fa fa-bars" id="bar" style="font-size:30px;"></i>
+             </button>
+            <div class="content">
+                <ul id="cul">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="banner"> </section>
+    <div class="row">
+        <div class="column box">
+            <div class="imgBx">
+                <img src="assets/img.jpg">
+            </div>
+            <div class="content">
+                <h2>Shubham Kariya<br><span>Creative Design</span></h2>
+            </div>
+        </div>
+        <div class="column">
+            <h1>ABOUT US</h1>
+            <h2>Hello All I'm Shubham Kariya <br>I'm here to show some of skills of
+                <span style="color:blue" class="txt-rotate" data-period="2000" data-rotate='[ "Website designer.", "Graphics Designer.", "Android developer.", "Flutter developer..", "fun!" ]'></span><br> I have done many project.
+            </h2>
+            <a href="#" class="button" style="margin-top:30px">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p class="button_color" style="color: #03e9f4;">View More</p>
+            </a>
+        </div>
+    </div>
+    <!-- <div id="row"> -->
+
+
+   
+</body>
+
+
+</html>
