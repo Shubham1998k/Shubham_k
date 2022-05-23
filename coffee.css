@@ -259,10 +259,26 @@
     background-color: #000;
     }
 
+   .value{
+    margin-top: 10%;
+    background-color:black;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 60px; 
+    margin: 30px;
+}
     @media screen and (max-width: 792px) {
     
         .container_coffee{
-            margin-left:10%;
+            margin-left:20%;
         }
+        .value{
+            margin-top: 30%;
+            background-color:black;
+            border-style: solid;
+            border-color: white;
+            margin-bottom: 60px; 
+        }
+       
      
     }
