@@ -268,17 +268,21 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 792px) {
 
-    .box {
+  .box {
         position: relative;
-        width: 300px;
+        width: 250px;
         height: 350px;
         display: inline-block;
         justify-content: center;
-        align-items: center;
-        margin-left: 20%;
         background: #060c21;
         transition: 0.5s;
     }
+    #style_aboutus{
+        margin-left:1px
+    }
+   
+
+}
    
 
 }
